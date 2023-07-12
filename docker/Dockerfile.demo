@@ -1,4 +1,4 @@
-FROM indy-base
+FROM ghcr.io/findy-network/findy-base:indy-1.16.ubuntu-18.04 AS indy-base
 
 ENV ENABLE_PTVSD 0
 ENV ENABLE_PYDEVD_PYCHARM 0
