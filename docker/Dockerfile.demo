@@ -5,6 +5,8 @@ ENV ENABLE_PYDEVD_PYCHARM 0
 ENV PYDEVD_PYCHARM_HOST "host.docker.internal"
 ENV ACAPY_DEBUG_WEBHOOKS 1
 
+RUN apt-get install -y curl python3 build-essential ca-certificates 
+
 RUN curl -L -o bin/jq \
 	https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 && \
 	chmod ug+x bin/jq
